@@ -22,7 +22,7 @@ const onAdd= count => {
             <h4>Duración:</h4> <p>{disco?.duracion}</p>
             <p>En stock: Si</p>
             <ItemCount stock={disco?.cantidad} onAdd={onAdd}/>
-            <Link to="/" type="button" class="btn btn-outline-dark">Volver</Link>
+            <Link to="/" type="button" className="btn btn-outline-dark">Volver</Link>
           </div>
         </div>
           

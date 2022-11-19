@@ -7,14 +7,14 @@ const Cart = ({ item }) => {
 
 return (
     <div className='container'>
-        <div class="card" style={{width: "18rem"}}>
-            <img src={item?.image} class="card-img-top" alt={item?.name}/> 
-        <div class="card-body">
-            <h3 class="card-title">{item?.name}</h3>
+        <div className="card" style={{width: "18rem"}}>
+            <img src={item?.image} className="card-img-top" alt={item?.name}/> 
+        <div className="card-body">
+            <h3 className="card-title">{item?.name}</h3>
             <h4>{item?.cd}</h4>
-            <p class={item?.categoria}></p>
+            <p className={item?.categoria}></p>
         </div>
-        <div class="card-body">
+        <div className="card-body">
             <button onClick={handleRemove} className="btn btn-dark">Eliminar</button>
         </div>
         </div>

@@ -1,8 +1,13 @@
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
 .Container-General{
 color:black;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
+
 }
 
 .sectionCds{
@@ -14,12 +19,10 @@ flex-wrap: wrap;
 
 .card{
     width: 210px;
-    height: 900px;
     margin: 15px;
     padding: 0.7em;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
     background-color: #ffffff;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 }
@@ -27,6 +30,7 @@ flex-wrap: wrap;
 .card h3{
     color: #00cbf3;
     font-weight:bold;
+    text-decoration: none;
 }
 
 .card h4{

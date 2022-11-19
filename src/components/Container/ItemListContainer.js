@@ -28,7 +28,7 @@ console.log(products)
         <div className="Container-General">
             {products.map((disco) => {
                 return(
-<Link to={`../item/${disco?.id}`}> <Items disco={disco}/> </Link>
+                    <Link to={`../item/${disco?.id}`}> <Items disco={disco}/> </Link>
             )})}
         </div>
     );

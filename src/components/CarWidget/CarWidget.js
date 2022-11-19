@@ -28,19 +28,19 @@ return (
             <span className="p-1">{totalItems}</span>
         </AiOutlineShoppingCart>
 
-        <div class="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h3 class="offcanvas-title" id="offcanvasRightLabel">Productos seleccionados</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div className="offcanvas-header">
+                <h3 className="offcanvas-title" id="offcanvasRightLabel">Productos seleccionados</h3>
+                <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             {!items.length 
                 ? 
-                <div class="offcanvas-body">
+                <div className="offcanvas-body">
                     <h3 className="carritoStyle">Tu carrito esta vacío</h3>
                     <h6 className="carritoStyle">¡Muchos productos te esperan!</h6>
                     </div>
                 :
-                <div class="offcanvas-body">
+                <div className="offcanvas-body">
                 {items.map((item, index)=> {
                     return(
                     <div>

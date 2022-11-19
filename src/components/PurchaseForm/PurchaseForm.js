@@ -2,6 +2,7 @@ import { addDoc, collection, Timestamp, updateDoc, doc, increment } from "fireba
 import { Formik, Form, Field } from 'formik'
 import { Link } from "react-router-dom";
 
+
 //Context
 import { UseContext } from '../../Context/CartContext'
 //fb
@@ -112,7 +113,7 @@ const validateEmail = value => {
                         </div>
                     </div>    
                         <div className="col-12 mt-2">
-                            <Link to="/" type="submit" className="btn btn-success" >Finalizar compra</Link>
+                            <Link to="/" type="submit" className="btn btn-info" >Finalizar compra</Link>
                         </div>
                     </Form>
                     </div>
