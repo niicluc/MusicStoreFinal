@@ -1,0 +1,18 @@
+.carritoStyle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.margen{
+    margin-left: 10px;
+}
+
+.botones{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+

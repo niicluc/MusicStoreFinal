@@ -1,0 +1,50 @@
+.Container-General{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    
+    
+    .card{
+        margin: 15px;
+        padding: 0.7em;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        background-color: #ffffff;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    }
+    
+    .card h3{
+        color: #00cbf3;
+        font-weight:bold;
+    }
+    
+    .card h4{
+        font-size: 0.975em;
+        color: #000000;
+    }
+    
+    .card h5{
+        font-size: 0.775em;
+        color: #000000;
+        font-weight: normal;
+    }
+    
+    .card .button{
+        border: none;
+        background-color: #000000;
+        background-color: #00cbf3;
+        color: #ffffff;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",;
+        border-radius: 7px;
+    }
+    
+    .card img{
+        width: 100%;
+    }
+    
+    .card img:hover{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%); }
