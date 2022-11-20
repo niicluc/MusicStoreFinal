@@ -3,7 +3,7 @@ import ItemCount from "../CarWidget/ItemCount/ItemCount";
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { db } from "../../firebase/config";
-import { collection, getDocs, query } from "firebase/firestore";
+import { collection, getDocs, query, where, querySnapshot, getFirestore } from "firebase/firestore";
 import Items from "./Items";
 
 
@@ -11,18 +11,22 @@ const ItemListContainer = () => {
 
     const [products, setProducts] = useState([null])
     const {categoria} = useParams()
-    const getProducts = async() =>{
-        const docs =[]
-        const querySnapshot= await getDocs(collection(db, "productos"))
-        querySnapshot.forEach(doc =>{
-            docs.push({...doc.data(),id:doc.id})
-        })
-        setProducts(docs)
-    }
-    useEffect (()=> {
-        getProducts()
-    },[]) 
-console.log(products)
+console.log(categoria)
+    useEffect(() => {
+    
+        const db = getFirestore()
+        const docRef = categoria ? query(collection(db, 'productos'), where("categoria", "==", categoria)) : collection(db, 'productos');
+        
+        getDocs(docRef)
+            .then((snapshot) => {
+            setProducts(snapshot.docs.map((doc)=> ({id:doc.id, ...doc.data()})));
+            })
+            console.log(products)
+            }, [categoria]);
+
+
+
+
 
     return ( 
         <div className="Container-General">

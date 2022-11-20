@@ -4,11 +4,16 @@ import ItemCount from '../components/CarWidget/ItemCount/ItemCount';
 import { UseContext } from '../Context/CartContext';
 
 
+
 const ItemDetailContainer = ({disco}) => {
 const {addToCart} = UseContext()
 const onAdd= count => {
   addToCart(disco, count)
 }
+
+
+
+
     return(
     <div>
         <div className="Container-General">
